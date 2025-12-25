@@ -98,6 +98,97 @@ $(function () {
     });
 
 
+    //===== Portfolio Highlights (rendered via JS)
+    var portfolioHighlights = [
+        {
+            title: 'Mobile Journal App',
+            description: 'A mobile app to track daily activities, journaling, and spiritual routines.',
+            image: 'assets/images/project-1.jpg',
+            url: '#'
+        },
+        {
+            title: 'Financial Report App',
+            description: 'A mobile app that helps users track, analyze, and visualize their finances on the go.',
+            image: 'assets/images/project-2.jpg',
+            url: '#'
+        },
+        {
+            title: 'Moreooo Company Profile',
+            description: 'Corporate profile site with a landing page, service catalog, and lead-capture form.',
+            image: 'assets/images/project-7.png',
+            url: 'https://apw-marieooo.pages.dev/'
+        },
+        {
+            title: 'SkillMate',
+            description: 'A web platform that lets users exchange skills, learn from each other, and grow together.',
+            image: 'assets/images/project-3.jpg',
+            url: '#'
+        },
+        {
+            title: 'Learning Management Platform',
+            description: 'A web platform to manage courses, track student progress, and deliver online learning.',
+            image: 'assets/images/project-4.jpg',
+            url: '#'
+        },
+        {
+            title: 'Coffee Melekk Company Profile',
+            description: 'Corporate profile site with a landing page, service catalog, and lead-capture form.',
+            image: 'assets/images/project-8.png',
+            url: 'https://apw-coffee-melekk.pages.dev/'
+        },
+        {
+            title: 'E-Commerce Platform',
+            description: 'A web platform that allows users to buy, sell, and manage products seamlessly online.',
+            image: 'assets/images/project-5.jpg',
+            url: '#'
+        },
+        {
+            title: 'Inventory Management System',
+            description: 'A system that helps businesses track, manage, and optimize their inventory efficiently.',
+            image: 'assets/images/project-6.jpg',
+            url: '#'
+        },
+        {
+            title: 'TBM Company Profile',
+            description: 'Corporate profile site with a landing page, service catalog, and lead-capture form.',
+            image: 'assets/images/project-9.png',
+            url: 'https://apw-tbm-merah-putih.pages.dev/'
+        },
+    ];
+
+    var buildPortfolioHighlights = function (items) {
+        var $portfolioList = $('#portfolio-list');
+
+        if (!$portfolioList.length) {
+            return;
+        }
+
+        $portfolioList.empty();
+
+        items.forEach(function (item) {
+            var hasUrl = item.url && item.url !== '#';
+            var linkAttrs = hasUrl ? ' href="' + item.url + '" target="_blank" rel="noopener noreferrer"' : ' href="#"';
+            var projectTitle = '<a' + linkAttrs + '>' + item.title + '</a>';
+            var template = ''
+                + '<div class="col-lg-4">'
+                + '    <div class="single_project">'
+                + '        <div class="project_image">'
+                + '            <img src="' + item.image + '" alt="' + item.title + '">'
+                + '        </div>'
+                + '        <div class="project_content">'
+                + '            <h4 class="project_title">' + projectTitle + '</h4>'
+                + '            <p>' + item.description + '</p>'
+                + '        </div>'
+                + '    </div>'
+                + '</div>';
+
+            $portfolioList.append(template);
+        });
+    };
+
+    buildPortfolioHighlights(portfolioHighlights);
+
+
     //===== Slick Project
 
     $('.project_active').slick({

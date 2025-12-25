@@ -101,27 +101,28 @@ $(function () {
     //===== Portfolio Highlights (rendered via JS)
     var portfolioHighlights = [
         {
-            title: 'Mobile Journal App',
-            description: 'A mobile app to track daily activities, journaling, and spiritual routines.',
-            image: 'assets/images/project-1.jpg',
-            url: '#'
-        },
-        {
-            title: 'Financial Report App',
-            description: 'A mobile app that helps users track, analyze, and visualize their finances on the go.',
-            image: 'assets/images/project-2.jpg',
-            url: '#'
-        },
-        {
             title: 'Moreooo Company Profile',
             description: 'Corporate profile site with a landing page, service catalog, and lead-capture form.',
             image: 'assets/images/project-7.png',
             url: 'https://apw-marieooo.pages.dev/'
         },
         {
+            title: 'AI Meeting Assistant',
+            description: 'A smart assistant that summarizes meetings, tracks action items, and shares follow-ups automatically.',
+            image: 'assets/images/project-10.png',
+            url: '#'
+        },
+        {
             title: 'SkillMate',
             description: 'A web platform that lets users exchange skills, learn from each other, and grow together.',
             image: 'assets/images/project-3.jpg',
+            url: '#'
+        },
+        
+        {
+            title: 'Mobile Journal App',
+            description: 'A mobile app to track daily activities, journaling, and spiritual routines.',
+            image: 'assets/images/project-1.jpg',
             url: '#'
         },
         {
@@ -146,6 +147,13 @@ $(function () {
             title: 'Inventory Management System',
             description: 'A system that helps businesses track, manage, and optimize their inventory efficiently.',
             image: 'assets/images/project-6.jpg',
+            url: '#'
+        },
+        
+        {
+            title: 'Financial Report App',
+            description: 'A mobile app that helps users track, analyze, and visualize their finances on the go.',
+            image: 'assets/images/project-2.jpg',
             url: '#'
         },
         {

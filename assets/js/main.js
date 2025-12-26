@@ -100,6 +100,13 @@ $(function () {
 
     //===== Portfolio Highlights (rendered via JS)
     var portfolioHighlights = [
+        
+        {
+            title: 'Careku – AI Health Companion App',
+            description: 'A mobile app powered by AI to help you stay healthy with personalized guidance and support.',
+            image: 'assets/images/project-11.png',
+            url: '#'
+        },
         {
             title: 'Moreooo Company Profile',
             description: 'Corporate profile site with a landing page, service catalog, and lead-capture form.',
